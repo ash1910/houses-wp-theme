@@ -32,6 +32,7 @@ unset($fields_builder['placebo']);
 									get_template_part('template-parts/dashboard/submit/form-fields/'.$key); 
 								echo '</div>';
 							}
+						} elseif( $key == 'area-size-unit' || $key == 'land-area-unit' ) {
 
 						} else {
 							echo '<div class="col-md-6 col-sm-12">';
