@@ -1,0 +1,507 @@
+/*
+Theme Name: Houzez Child
+Theme URI: http://www.favethemes.com/
+Author: Favethemes
+Author URI: http://www.favethemes.com/
+Description: Houzez is a premium WordPress theme for real estate agents where modern aesthetics are combined with tasteful simplicity, and where the ease of use is achieved without compromise in your ability to customise the design. Whether you are a real estate agent looking to build a website for your company or a web developer seeking a perfect WordPress theme for your next project, you are certain to appreciate the numerous features and benefits that our theme provides.
+Version: 1.0
+Tags: white, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, post-formats, theme-options, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: houzez
+Template: houzez
+*/
+
+@import url("../houzez/style.css");
+
+/* Your CSS code goes here
+-------------------------------------- */
+.header-transparent-wrap .logged-in-nav a:hover,
+.header-transparent-wrap .logged-in-nav a:active,
+.logged-in-nav-wrap .logged-in-nav a:hover,
+.logged-in-nav-wrap .logged-in-nav a:active {
+	color: #ffffff;
+}
+
+/* start: Grid View CSs */
+.page-template-template-search .advanced-search-nav {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f7f7f7;
+}
+.advanced-search-nav .btn-search {
+	background-color: #1f3654;
+	border-color: #1f3654;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 15px;
+	color: #ffffff;
+}
+.advanced-search-nav .btn-search:hover {
+	background-color: #f5ab56;
+	border-color: #f5ab56;
+}
+
+.ss-half-map .grid-view .item-listing-wrap {
+	width: 100%;
+	flex-basis: 100%;
+}
+.item-listing-grid.hz-item-gallery-js .listing-gallery-wrap .slick-prev,
+.item-listing-grid.hz-item-gallery-js .listing-gallery-wrap .slick-next {
+	text-shadow: 0 0 0;
+	background-color: #1f3654;
+	color: #fff;
+	border-radius: 50%;
+}
+.item-listing-grid.hz-item-gallery-js .listing-gallery-wrap .slick-prev::before,
+.item-listing-grid.hz-item-gallery-js
+	.listing-gallery-wrap
+	.slick-next::before {
+	font-size: 15px;
+}
+.item-listing-grid .item-header {
+	border-radius: 14px 14px 0 0;
+}
+.item-listing-grid .item-wrap {
+	box-shadow: 0 0 0;
+}
+.item-listing-grid .item-body .item-price-wrap .item-price {
+	color: #f5ab56;
+	font-size: 19px;
+	font-weight: 500;
+	text-transform: lowercase;
+}
+.item-listing-grid .item-body .item-type-wrap {
+	margin: 0;
+}
+.item-listing-grid .item-body .item-type-wrap > li {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1;
+	background-color: #1f3654;
+	color: #ffffff;
+	padding: 8px 15px;
+	border-radius: 3px;
+}
+.item-listing-grid .item-body .item-title {
+	margin-bottom: 0;
+	font-family: Barlow;
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+.item-listing-grid .item-body .item-title a {
+	color: #1f3654;
+}
+.item-listing-grid .item-body .item-title a:hover {
+	color: #f5ab56;
+}
+.item-listing-grid .item-body .item-content {
+	margin-top: 10px;
+	border-top: 1px solid #e4e4e4;
+	padding-top: 11px;
+}
+.item-listing-grid .item-body .item-content {
+	font-weight: 500;
+	color: #606060;
+}
+.item-listing-grid .item-body .item-content p:last-child {
+	margin-bottom: 0;
+}
+.item-listing-grid .item-body .item-content ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.item-listing-grid .item-body .item-content ul li {
+	display: block;
+	position: relative;
+	z-index: 1;
+	padding-left: 24px;
+}
+.item-listing-grid .item-body .item-content ul li:not(:last-child) {
+	margin-bottom: 7px;
+}
+.item-listing-grid .item-body .item-content ul li::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #1f3654;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+.half-map-wrap-right #houzez-properties-map {
+	max-height: 600px;
+}
+/* end: Grid View CSs */
+
+/* start: Property Details */
+.ss-property-detail {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.property_details_wrap {
+	border: 1px solid #dfdfdf;
+}
+.property_details_wrap .nav-tabs {
+	border: none;
+	margin-bottom: 40px;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item {
+	margin: 0;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item .nav-link {
+	width: 100%;
+	text-align: left;
+	padding: 35px 40px;
+	background: #f7f7f7;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 500;
+	color: #606060;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	border: none;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item .nav-link.active {
+	background: transparent;
+	color: #1f3654;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item .nav-link.active svg path {
+	fill: #1f3654;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item .nav-link svg path {
+	fill: #606060;
+}
+
+.property_details_wrap .nav.nav-tabs .nav-item:not(:last-child) .nav-link {
+	border-right: 1px solid #dfdfdf;
+	border-radius: 0;
+}
+.property_details_wrap .tab-content {
+	position: relative;
+	min-height: 630px;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.property_details_top_gallery {
+	position: relative;
+}
+.property_details_top_gallery .top-gallery-section .lSAction .slick-arrow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #f5ab56;
+	opacity: 1;
+	color: #fff;
+}
+.property_details_top_gallery .item-tools {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.property_details_top_gallery .item-tools .item-tool > span {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ba3840;
+	background-color: transparent;
+	color: #ba3840;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	border-radius: 50%;
+	line-height: 1;
+}
+.property_details_top_gallery .item-tools .item-tool > span .stock.text-danger,
+.property_details_top_gallery .item-tools .item-tool > span .fill {
+	display: none;
+}
+.property_details_top_gallery .item-tools .item-tool > span .fill.text-danger,
+.property_details_top_gallery .item-tools .item-tool > span .stock {
+	display: inline-block;
+	color: #f13541;
+}
+.property_details_top_gallery .item-tools .item-tool > span i {
+	margin-top: 2px;
+}
+.property_details_top_content .page-title h1 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #f5ab56;
+}
+.property_details_top_content .item-type-wrap {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+.property_details_top_content .item-type-wrap li {
+	font-size: 16px;
+	font-weight: 400;
+	color: #606060;
+}
+.property_details_top_content .property-review-wrap {
+	border-top: 1px solid #eeeeee;
+	margin-top: 20px;
+	padding-top: 21px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.property_details_top_content .property-review-wrap .rating-score-wrap {
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 30px 15px 30px 0px rgba(0, 0, 0, 0.05);
+	padding: 8px 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	line-height: 1;
+}
+.rating-score-wrap .star .icon-rating {
+	width: 18px;
+	height: 18px;
+	background-size: 18px;
+	line-height: 1;
+}
+.property_details_top_content .property-review-wrap h2 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+	color: #1f3654;
+	margin: 0;
+}
+.property_details_top_content .property-features-wrap {
+	border-top: 1px solid #eeeeee;
+	margin-top: 20px;
+	padding-top: 21px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.property_details_top_content .property-features-wrap li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: left;
+	color: #1f3654;
+}
+.property_details_top_content .property-features-wrap li:not(:last-child) {
+	margin-bottom: 20px;
+}
+.property_details_top_content .property-features-wrap li .key {
+	display: inline-block;
+	font-weight: 800;
+	min-width: 240px;
+	max-width: 250px;
+}
+.property_details_top_content .property-info-wrap {
+	border-top: 1px solid #eeeeee;
+	margin-top: 20px;
+	padding-top: 21px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.property_details_top_content .property-info-wrap li > a,
+.property_details_top_content .property-info-wrap li > .item-tool-favorite {
+	width: 35px;
+	height: 35px;
+	border: 0.8px solid #4e8ef2;
+	background-color: transparent;
+	color: #4e8ef2 !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	border-radius: 50%;
+	line-height: 1;
+}
+.property_details_top_content .property-info-wrap li.whatsapp > a {
+	border-color: #3eb24e;
+}
+
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.fill.text-danger,
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.stock {
+	display: inline-flex;
+	color: #4e8ef2 !important;
+	line-height: 1;
+}
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.stock.text-danger,
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.fill {
+	display: none;
+}
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.stock.text-danger,
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.fill {
+	display: none;
+}
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.fill.text-danger,
+.property_details_top_content
+	.property-info-wrap
+	li
+	> .item-tool-favorite
+	.stock {
+	display: inline-flex;
+	color: #4e8ef2 !important;
+}
+
+.property_description,
+.property_overview_accommodation {
+	margin: 40px 20px 20px 20px;
+	border-top: 1px solid #dfdfdf;
+	padding-top: 21px;
+}
+.property_description .title,
+.property_overview_accommodation_content .title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: left;
+	color: #f5ab56;
+	margin-bottom: 0;
+}
+.property_overview_accommodation_content .overview_list,
+.property_overview_accommodation_content .features_list {
+	margin-top: 50px;
+	columns: 2;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+.property_overview_accommodation_content .features_list li {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 2;
+	text-align: left;
+	color: #606060;
+}
+.property_overview_accommodation_content .overview_list {
+	columns: 1;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.property_overview_accommodation_content .overview_list li {
+	display: flex;
+	align-items: start;
+}
+.property_overview_accommodation_content .overview_list li .key {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.2;
+	color: #1f3654;
+	max-width: 250px;
+	width: 100%;
+}
+.property_overview_accommodation_content .overview_list li .value {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #1f3654;
+}
+.property_overview_accommodation_content .overview_list li .value > a,
+.property_overview_accommodation_content .overview_list li .value > .available {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #1f3654;
+	margin-top: 10px;
+}
+.property_description .desc {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #606060;
+}
+.property_description .desc p:last-child {
+	margin: 0;
+}
+
+/* property sidebar */
+.property_sidebar_wrap {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 20px;
+}
+.property_sidebar_wrap .sidebar_item {
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 40px 20px;
+	text-align: center;
+}
+.property_sidebar_wrap .sidebar_item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.property_sidebar_wrap .sidebar_item .title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #f5ab56;
+	margin-bottom: 5px;
+}
+.property_sidebar_wrap .sidebar_item .min_term,
+.property_sidebar_wrap .sidebar_item .available {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.3;
+	color: #606060;
+}
+/* end: Property Details */
