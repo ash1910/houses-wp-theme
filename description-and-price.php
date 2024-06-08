@@ -37,7 +37,7 @@ if(empty($default_multi_currency)) {
 				<div class="form-group">
 					<label for="prop_furniture">Fully Furnished</label>
 
-					<div class="form-check form-switch">
+					<div class=" form-switch">
 						<input class="form-check-input " type="checkbox" role="switch" id="prop_furniture" name="prop_furniture" <?php
 							if (houzez_edit_property()) {
 								if(houzez_get_field_meta('property_furniture') == 1){
@@ -55,7 +55,7 @@ if(empty($default_multi_currency)) {
 				<div class="form-group">
 					<label for="prop_utilities">Utilities Included</label>
 
-					<div class="form-check form-switch">
+					<div class=" form-switch">
 						<input class="form-check-input " type="checkbox" role="switch" id="prop_utilities" name="prop_utilities" <?php
 							if (houzez_edit_property()) {
 								if(houzez_get_field_meta('property_utilities') == 1){
@@ -72,7 +72,7 @@ if(empty($default_multi_currency)) {
 			<div class="col-md-4 col-sm-12">
 				<div class="form-group">
 					<label for="prop_pet_friendly">Pet Friendly</label>
-					<div class="form-check form-switch">
+					<div class=" form-switch">
 						<input class="form-check-input " type="checkbox" role="switch" id="prop_pet_friendly" name="prop_pet_friendly" <?php
 							if (houzez_edit_property()) {
 								if(houzez_get_field_meta('property_pet_friendly') == 1){
@@ -82,7 +82,16 @@ if(empty($default_multi_currency)) {
 							?>
 						>
 					</div>
-
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="form-group">
+					<label for="prop_pet_deposit">Pet Deposit</label>
+					<input class="form-control" id="prop_pet_deposit" name="prop_pet_deposit" value="<?php
+						if (houzez_edit_property()) {
+							houzez_field_meta('property_pet_deposit');
+						}
+						?>" type="text">
 				</div>
 			</div>
 
@@ -94,6 +103,43 @@ if(empty($default_multi_currency)) {
 							houzez_field_meta('property_laundry');
 						}
 						?>" placeholder="For example: In Unit, On Premises, Not Included" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-12">
+				<div class="form-group">
+					<label for="prop_deposit">Deposit</label>
+					<input class="form-control" id="prop_deposit" name="prop_deposit" value="<?php
+						if (houzez_edit_property()) {
+							houzez_field_meta('property_deposit');
+						}
+						?>" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-12">
+				<div class="form-group">
+					<label for="prop_cleaning">Cleaning?</label>
+					<div class=" form-switch">
+						<input class="form-check-input " type="checkbox" role="switch" id="prop_cleaning" name="prop_cleaning" <?php
+							if (houzez_edit_property()) {
+								if(houzez_get_field_meta('property_cleaning') == 1){
+									echo "checked";
+								}
+							}
+							?>
+						>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="form-group">
+					<label for="prop_cleaning_deposit">Cleaning Fee</label>
+					<input class="form-control" id="prop_cleaning_deposit" name="prop_cleaning_deposit" value="<?php
+						if (houzez_edit_property()) {
+							houzez_field_meta('property_cleaning_deposit');
+						}
+						?>" type="text">
 				</div>
 			</div>
 

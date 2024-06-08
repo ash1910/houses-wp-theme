@@ -296,9 +296,32 @@ if( !function_exists('houzez_submit_listing') ) {
                 update_post_meta( $prop_id, 'fave_property_pet_friendly',  0);
             }
 
+            // Add Pet Deposit post meta
+            if( isset( $_POST['prop_pet_deposit'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_pet_deposit', sanitize_text_field( $_POST['prop_pet_deposit'] ) );
+            }
+
             // Add Laundry post meta
             if( isset( $_POST['prop_laundry'] ) ) {
                 update_post_meta( $prop_id, 'fave_property_laundry', sanitize_text_field( $_POST['prop_laundry'] ) );
+            }
+
+            // Add Pet Deposit post meta
+            if( isset( $_POST['prop_deposit'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_deposit', sanitize_text_field( $_POST['prop_deposit'] ) );
+            }
+
+            // Add Cleaning meta
+            if( isset( $_POST['prop_cleaning'] ) && ( sanitize_text_field( $_POST['prop_cleaning'] ) == "on" ) ) {
+                update_post_meta( $prop_id, 'fave_property_cleaning',  1);
+            }
+            else{
+                update_post_meta( $prop_id, 'fave_property_cleaning',  0);
+            }
+
+            // Add Cleaning Fee post meta
+            if( isset( $_POST['prop_cleaning_deposit'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_cleaning_deposit', sanitize_text_field( $_POST['prop_cleaning_deposit'] ) );
             }
 
             // Add Bath Type post meta
