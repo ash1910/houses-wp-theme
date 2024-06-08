@@ -418,6 +418,23 @@ if( !function_exists('houzez_submit_listing') ) {
                 update_post_meta( $prop_id, 'fave_virtual_tour', $_POST['virtual_tour'] );
             }
 
+            // Bedroom
+            if( isset( $_POST['prop_bedroom1'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_bedroom1', $_POST['prop_bedroom1'] );
+            }
+            if( isset( $_POST['prop_bedroom2'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_bedroom2', $_POST['prop_bedroom2'] );
+            }
+            if( isset( $_POST['prop_bedroom3'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_bedroom3', $_POST['prop_bedroom3'] );
+            }
+            if( isset( $_POST['prop_bedroom4'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_bedroom4', $_POST['prop_bedroom4'] );
+            }
+            if( isset( $_POST['prop_bedroom5'] ) ) {
+                update_post_meta( $prop_id, 'fave_property_bedroom5', $_POST['prop_bedroom5'] );
+            }
+
             // Year Built
             if( isset( $_POST['prop_year_built'] ) ) {
                 update_post_meta( $prop_id, 'fave_property_year', sanitize_text_field( $_POST['prop_year_built'] ) );
