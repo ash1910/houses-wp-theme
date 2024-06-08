@@ -40,6 +40,76 @@ function houzez_virtual_tour_metabox_fields( $metabox_fields ) {
             'sanitize_callback' => 'none',
             'tab' => 'virtual_tour',
         ),
+        array(
+            'name' => houzez_option('cls_bedroom1', 'Bedroom 1'),
+            'id' => "{$houzez_prefix}property_bedroom1",
+            'type' => 'radio',
+            'std' => 1,
+            'options' => array(
+                'King' => houzez_option('cl_king', 'King'),
+                'Queen' => houzez_option('cl_queen', 'Queen'),
+                'Full' => houzez_option('cl_full', 'Full'),
+                'Twin' => houzez_option('cl_twin', 'Twin')
+            ),
+            'columns' => 12,
+            'tab' => 'virtual_tour',
+        ),
+        array(
+            'name' => houzez_option('cls_bedroom2', 'Bedroom 2'),
+            'id' => "{$houzez_prefix}property_bedroom2",
+            'type' => 'radio',
+            'std' => 1,
+            'options' => array(
+                'King' => houzez_option('cl_king', 'King'),
+                'Queen' => houzez_option('cl_queen', 'Queen'),
+                'Full' => houzez_option('cl_full', 'Full'),
+                'Twin' => houzez_option('cl_twin', 'Twin')
+            ),
+            'columns' => 12,
+            'tab' => 'virtual_tour',
+        ),
+        array(
+            'name' => houzez_option('cls_bedroom3', 'Bedroom 3'),
+            'id' => "{$houzez_prefix}property_bedroom3",
+            'type' => 'radio',
+            'std' => 1,
+            'options' => array(
+                'King' => houzez_option('cl_king', 'King'),
+                'Queen' => houzez_option('cl_queen', 'Queen'),
+                'Full' => houzez_option('cl_full', 'Full'),
+                'Twin' => houzez_option('cl_twin', 'Twin')
+            ),
+            'columns' => 12,
+            'tab' => 'virtual_tour',
+        ),
+        array(
+            'name' => houzez_option('cls_bedroom4', 'Bedroom 4'),
+            'id' => "{$houzez_prefix}property_bedroom4",
+            'type' => 'radio',
+            'std' => 1,
+            'options' => array(
+                'King' => houzez_option('cl_king', 'King'),
+                'Queen' => houzez_option('cl_queen', 'Queen'),
+                'Full' => houzez_option('cl_full', 'Full'),
+                'Twin' => houzez_option('cl_twin', 'Twin')
+            ),
+            'columns' => 12,
+            'tab' => 'virtual_tour',
+        ),
+        array(
+            'name' => houzez_option('cls_bedroom5', 'Bedroom 5'),
+            'id' => "{$houzez_prefix}property_bedroom5",
+            'type' => 'radio',
+            'std' => 1,
+            'options' => array(
+                'King' => houzez_option('cl_king', 'King'),
+                'Queen' => houzez_option('cl_queen', 'Queen'),
+                'Full' => houzez_option('cl_full', 'Full'),
+                'Twin' => houzez_option('cl_twin', 'Twin')
+            ),
+            'columns' => 12,
+            'tab' => 'virtual_tour',
+        )
 	);
 
 	return array_merge( $metabox_fields, $fields );
