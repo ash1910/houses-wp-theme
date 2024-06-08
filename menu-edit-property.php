@@ -62,7 +62,7 @@
                 case 'virtual_tour':
                     echo '<li>
                             <a href="#" data-val="virtual-tour" class="menu-edit-property-link">
-                                <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_virtual_tour', '360° Virtual Tour').'
+                                <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_bedrooms', 'Bedrooms').'
                             </a>
                         </li>';
                     break;
