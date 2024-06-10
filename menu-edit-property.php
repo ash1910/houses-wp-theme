@@ -70,18 +70,18 @@
                 case 'floorplans':
                     echo '<li>
                             <a href="#" data-val="floorplan" class="menu-edit-property-link">
-                                <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_floor_plans', 'Floor Plans').'
+                                <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_availability', 'Availability').'
                             </a>
                         </li>';
                     break;
 
-                case 'multi-units':
-                    echo '<li>
-                            <a href="#" data-val="sub-properties" class="menu-edit-property-link">
-                                <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_sub_listings', 'Sub Listings').'
-                            </a>
-                        </li>';
-                    break;
+                // case 'multi-units':
+                //     echo '<li>
+                //             <a href="#" data-val="sub-properties" class="menu-edit-property-link">
+                //                 <i class="houzez-icon icon-arrow-right-1"></i> '.houzez_option('cls_sub_listings', 'Sub Listings').'
+                //             </a>
+                //         </li>';
+                //     break;
 
                 case 'agent_info':
                     if(houzez_show_agent_box()) {
