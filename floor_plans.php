@@ -30,7 +30,25 @@ add_filter( 'houzez_property_metabox_tabs', 'houzez_floor_plans_metabox_tab', 65
 function houzez_floor_plans_metabox_fields( $metabox_fields ) {
 	$houzez_prefix = 'fave_';
 
+    $options_array = array('' => houzez_option('cl_min_stay_plac', 'Select Minimum Stay'));
+
+	$i = 0;
+    while ($i < 20) {
+		$i = $i + 1;
+        $options_array[$i] = $i;
+    }
+
 	$fields = array(
+		array(
+            'id' => "{$houzez_prefix}property_min_stay",
+            'name' => houzez_option('cl_min_stay', 'Minimum Stay (In Months)' ),
+            'desc' => '',
+            'type' => 'select',
+            'std' => "global",
+            'options' => $options_array,
+            'columns' => 6,
+            'tab' => 'floor_plans'
+        ),
 		array(
 	        'id'     => 'floor_plans',
 	        // Gropu field
